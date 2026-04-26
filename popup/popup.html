@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Trace PRO</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="branding-area">
+            <img src="../assets/branding.png" alt="Map Trace Pro" class="brand-img">
+        </div>
+
+        <div class="status-wrapper">
+            <span id="status-chip" class="status-ready">ENGINE READY</span>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <svg class="stat-icon-svg" viewBox="0 0 256 256"><path d="M232,128a104,104,0,1,1-104-104A104.11,104.11,0,0,1,232,128Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><polyline points="128 72 128 128 184 128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
+                <span class="stat-value" id="lead-count">0</span>
+                <span class="stat-label">Total Leads</span>
+            </div>
+            <div class="stat-card">
+                <svg class="stat-icon-svg" viewBox="0 0 256 256"><path d="M224,56H32a8,8,0,0,0-8,8V192a8,8,0,0,0,8,8H224a8,8,0,0,0,8-8V64A8,8,0,0,0,224,56Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><polyline points="224 64 128 144 32 64" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
+                <span class="stat-value" id="email-count">0</span>
+                <span class="stat-label">Emails Found</span>
+            </div>
+            <div class="stat-card">
+                <svg class="stat-icon-svg" viewBox="0 0 256 256"><path d="M222.39,158.46l-47.88-21.28a16,16,0,0,0-16.42,2.35L133.32,160A101.49,101.49,0,0,1,96,122.68l20.47-24.77a16,16,0,0,0,2.35-16.42L97.54,33.61A16,16,0,0,0,79.16,24.16C45.2,30.7,24,61.1,24,96c0,75.11,60.89,136,136,136,34.9,0,65.3-21.2,71.84-55.16A16,16,0,0,0,222.39,158.46Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                <span class="stat-value" id="contact-count">0</span>
+                <span class="stat-label">Contacts</span>
+            </div>
+            <div class="stat-card">
+                <svg class="stat-icon-svg" viewBox="0 0 256 256"><path d="M187.51,42.11a96,96,0,0,0-132.6,132.6L32,224l49.29-22.91a96,96,0,1,0,106.22-159Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M152,104a24,24,0,1,1-24-24A24,24,0,0,1,152,104Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                <span class="stat-value" id="whatsapp-count">0</span>
+                <span class="stat-label">WhatsApp</span>
+            </div>
+        </div>
+
+        <div class="action-area">
+            <button id="startBtn" class="btn btn-main">
+                <svg width="20" height="20" viewBox="0 0 256 256" style="margin-right:8px"><path d="M213.66,42.34a8,8,0,0,0-8.68-1.57L40.23,106.52a8,8,0,0,0,1.2,15l68.7,24.38,24.38,68.7a8,8,0,0,0,15,1.2l65.75-164.75A8,8,0,0,0,213.66,42.34Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
+                Initialize Deep Scan
+            </button>
+            
+            <div class="secondary-actions">
+                <button id="stopBtn" class="btn btn-stop" disabled>Stop Scan</button>
+                <button id="exportBtn" class="btn btn-download" disabled>Download Excel</button>
+            </div>
+        </div>
+
+        <footer class="dev-footer">
+            <p>Senior Software Developer: <b>Ubaid Ur Rehman</b></p>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
