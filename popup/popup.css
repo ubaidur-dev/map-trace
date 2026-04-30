@@ -12,7 +12,7 @@
 }
 
 body {
-    width: 400px;
+    width: 380px;
     background-color: var(--bg-light);
     color: var(--text-main);
     font-family: 'Segoe UI', 'Poppins', -apple-system, sans-serif;
